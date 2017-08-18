@@ -33,12 +33,12 @@ class Teacher extends Person {
     return false;
   }
 
-  notifyStudentAppended(message) {
-    console.log(`I am ${this.name}. I know ${message}.`);
+  notifyStudentAppended(joinedMessage) {
+    console.log(`I am ${this.name}. I know ${joinedMessage}.`);
   }
 
-  notifyLeaderAssigned(message) {
-    console.log(`I am ${this.name}. I know ${message}.`);
+  notifyLeaderAssigned(joinedMessage) {
+    console.log(`I am ${this.name}. I know ${joinedMessage}.`);
   }
 }
 
