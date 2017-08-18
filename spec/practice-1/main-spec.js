@@ -8,7 +8,7 @@ describe("Person", () => {
     expect(person.name).toBe("Tom");
     expect(person.age).toBe(21);
   });
-
+  
   it("should have a method introduce, introduce person with name and age", () => {
     let person = new Person("Tom", 21);
 
@@ -17,7 +17,7 @@ describe("Person", () => {
     expect(introduce).toBe("My name is Tom. I am 21 years old.");
 
   });
-
+  
   describe("Student", () => {
     it("should have field name, age and class number", () => {
       let student = new Student("Tom", 21, 2);
@@ -53,6 +53,7 @@ describe("Person", () => {
       expect(introduce).toBe("My name is Tom. I am 21 years old. I am a Worker. I have a job.");
 
     });
-
+    
   });
+  
 });
