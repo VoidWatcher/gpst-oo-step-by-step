@@ -5,6 +5,13 @@ class Teacher extends Person {
     super (name, age);
     this.clazzes = clazzes;
     this.id = id;
+    this.joinClazzes();
+  }
+
+  joinClazzes () {
+    for (let value of this.clazzes) {
+      value.teacherMembers.push(this);
+    }
   }
 
   introduce () {
@@ -24,6 +31,14 @@ class Teacher extends Person {
       }
     }
     return false;
+  }
+
+  notifyStudentAppended(message) {
+    console.log(`I am ${this.name}. I know ${message}.`);
+  }
+
+  notifyLeaderAssigned(message) {
+    console.log(`I am ${this.name}. I know ${message}.`);
   }
 }
 
