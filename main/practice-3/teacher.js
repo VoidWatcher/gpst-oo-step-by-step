@@ -15,7 +15,7 @@ class Teacher extends Person {
   }
 
   introduce () {
-    if (this.clazzes == []) {
+    if (this.clazzes.length == 0) {
       return super.introduce() + ` ` + `I am a Teacher. I teach No Class.`;
     }
     else {
